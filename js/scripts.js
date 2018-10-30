@@ -38,6 +38,8 @@ $(document).ready(function() {
     modifyBalance(account.balance);
     $("#invalidInitialDeposit").hide();
     $("#existingAccount").hide();
+    $("#nameInput").val('');
+    $("#initialInput").val('');
   });
   $("#depositAccount").submit(function(event) {
     event.preventDefault();
@@ -59,8 +61,9 @@ $(document).ready(function() {
         return;
       }
       modifyBalance(account.withdraw(withdrawalAmount));
-      debugger;
     }
     $("#invalidWithdrawalAmount").hide();
+    $("#depositInput").val('');
+    $("#withdrawalInput").val('');
   });
 });
