@@ -24,6 +24,7 @@
                 <label for="initialInput">Initial Deposit:</label>
                 <input type="text" id="initialInput">
               </div>
+              <button type="button" name="button" class="btn btn-info">Submit</button>
             </form>
             <p class="error" id="invalidInitialDeposit">Your initial deposit was invalid!  Please input a valid number!</p>
           </div>
@@ -40,6 +41,7 @@
                 <label for="withdrawalInput">Withdrawal Amount:</label>
                 <input type="text" id="withdrawalInput">
               </div>
+              <button type="button" name="button" class="btn btn-info">Submit</button>
             </form>
             <p class="error" id="invalidDepositAmount">Your deposit or withdrawal amount was invalid! Please input a valid number!</p>
           </div>
@@ -47,8 +49,10 @@
       </div>
       <div class="modify-account">
         <h4>Current Balance:</h4>
-        <div class="balance-box">
-          <p>$ <span id="balance">0.00</span></p>
+        <div class="row">
+          <div class="col-sm-2 col-sm-offset-5">
+            <p class="balance-box">$ <span id="balance">0.00</span></p>
+          </div>
         </div>
       </div>
     </div>
