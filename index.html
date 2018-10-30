@@ -6,9 +6,51 @@
     <script src="js/jquery.js" charset="utf-8"></script>
     <script src="js/scripts.js" charset="utf-8"></script>
     <meta charset="utf-8">
-    <title></title>
+    <title>EpiBank</title>
   </head>
   <body>
-
+    <div class="container">
+      <h1>Welcome to EpiBank Account Management!</h1>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="modify-account">
+            <h3>Register a new account:</h3>
+            <form id="newAccount">
+              <div class="line">
+                <label for="nameInput">Name:</label>
+                <input type="text" id="nameInput">
+              </div>
+              <div class="line">
+                <label for="initialInput">Initial Deposit:</label>
+                <input type="text" id="initialInput">
+              </div>
+            </form>
+            <p class="error" id="invalidInitialDeposit">Your initial deposit was invalid!  Please input a valid number!</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="modify-account">
+            <h3>Deposit or withdraw funds:</h3>
+            <form id="depositAccount">
+              <div class="line">
+                <label for="depositInput">Deposit Amount:</label>
+                <input type="text" id="depositInput">
+              </div>
+              <div class="line">
+                <label for="withdrawalInput">Withdrawal Amount:</label>
+                <input type="text" id="withdrawalInput">
+              </div>
+            </form>
+            <p class="error" id="invalidDepositAmount">Your deposit or withdrawal amount was invalid! Please input a valid number!</p>
+          </div>
+        </div>
+      </div>
+      <div class="modify-account">
+        <h4>Current Balance:</h4>
+        <div class="balance-box">
+          <p>$ <span id="balance">0.00</span></p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
