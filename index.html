@@ -24,9 +24,10 @@
                 <label for="initialInput">Initial Deposit:</label>
                 <input type="text" id="initialInput">
               </div>
-              <button type="button" name="button" class="btn btn-info">Submit</button>
+              <button type="submit" name="button" class="btn btn-info">Submit</button>
             </form>
             <p class="error" id="invalidInitialDeposit">Your initial deposit was invalid!  Please input a valid number!</p>
+            <p class="error" id="existingAccount">There is already an account on this site!  We're sorry for any inconvenience.</p>
           </div>
         </div>
         <div class="col-sm-6">
@@ -41,9 +42,10 @@
                 <label for="withdrawalInput">Withdrawal Amount:</label>
                 <input type="text" id="withdrawalInput">
               </div>
-              <button type="button" name="button" class="btn btn-info">Submit</button>
+              <button type="submit" name="button" class="btn btn-info">Submit</button>
             </form>
             <p class="error" id="invalidDepositAmount">Your deposit or withdrawal amount was invalid! Please input a valid number!</p>
+            <p class="error" id="invalidWithdrawalAmount">You are attempting to withdraw more money than you have!  Please try again!</p>
           </div>
         </div>
       </div>
